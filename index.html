@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>kmart's portfolio</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="Logo">kmart<b>.</b></div>
+            <ul class="navItems">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#family">Family</a></li>
+            </ul>
+            <div class="Links">
+                <a href="https://www.facebook.com/martin.salamat.754/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/qwertykmrt/"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </nav> 
+
+        <div class="wrapper">
+            <div class="cols cols0">
+                <span class="topline">Hello</span>
+                <h1>I'm <span class="multiText">Coder</span></h1>
+                <p>why are you here?</p>
+                <div class="btns">
+                    <button onclick="location.href='#about'">Learn More About Me</button>
+                </div>
+                
+            </div>
+            <div class="cols cols1">
+                <div class="imgbox">
+                    <img src="images/splash.png" id="splash">
+                    <img src="images/me.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hi, I'm <strong>kmart</strong>,  a 19-year-old second-year IT student at CNSC. I'm passionate about technology and problem-solving, and I’m working towards becoming a skilled developer. When I'm not coding, you’ll find me at the gym or playing musical instruments, where I can unwind and stay creative.</p>
+                <p>I enjoy challenging myself both mentally and physically, and I’m always eager to learn something new. My goal is to combine my technical skills with my creativity to build innovative solutions that make an impact.</p>
+            </div>
+            <div class="about-image">
+                <img src="images/aboutpic.png" alt="Profile Picture">
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <div class="achievement-container">
+            <div class="achievement-item">
+                <img src="images/Achievement1.png" alt="Achievement 1" class="achievement-img">
+                <div class="achievement-text">
+                    <h3>2nd Placer in SHS EXPO for CSS NCII</h3>
+                    <p>I participated in the Senior High School Expo for CSS NCII and earned 2nd place, showcasing my technical skills.</p>
+                </div>
+            </div>
+            <div class="achievement-item">
+                <img src="images/Achievement2.png" alt="Achievement 2" class="achievement-img">
+                <div class="achievement-text">
+                    <h3>1st Year Senator</h3>
+                    <p>Was the first year senator during AY 2023-2024</p>
+                </div>
+            </div>
+            <div class="achievement-item">
+                <img src="images/Achievement3.jpg" alt="Achievement 3" class="achievement-img">
+                <div class="achievement-text">
+                    <h3>CCMS Mascot</h3>
+                    <p>Mascot for CCMS during 1st and 2nd Year of Intrams</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <div class="hobby-container">
+            <div class="hobby-item">
+                <img src="images/vid1.png" class="hobby-video" autoplay loop muted></img>
+                <div class="hobby-text">
+                    <h3>Singing</h3>
+                    <p>I love karaoke! You'll always see me holding a mic whenever theres a karaoke machine around.</p>
+                </div>
+            </div>
+            <div class="hobby-item">
+                <img src="images/vid2.png" class="hobby-video" autoplay loop muted></img>
+                <div class="hobby-text">
+                    <h3>GYM</h3>
+                    <p>I enjoy going to the gym. ye.</p>
+                </div>
+            </div>
+            <div class="hobby-item">
+                <img src="images/vid3.png" class="hobby-video" autoplay loop muted></img>
+                <div class="hobby-text">
+                    <h3>INSTRUMENTS</h3>
+                    <p>i play alot of instruments</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="family">
+        <h2>Family</h2>
+        <div class="family-container">
+            <div class="family-item">
+                <img src="images/fam.jpg" alt="Family Member 1" class="family-img">
+                <div class="family-text">
+                    <h3>Salamat Family</h3>
+                    <p>We're a pretty big family.</p>
+                </div>
+            </div>
+            <div class="family-item">
+                <img src="images/fam2.jpg" alt="Family Member 2" class="family-img">
+                <div class="family-text">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('.multiText', {
+            strings : ["Coder","Designer","Student"],
+            loop : true,
+            typeSpeed : 100,
+            backSpeed : 80,
+            backDelay : 1500
+        });
+    </script>
+</body>
+</html>
